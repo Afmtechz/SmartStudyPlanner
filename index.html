@@ -8,9 +8,478 @@
         <script src="script.js"></script>
     </head>
     <body>
-        <h1>Smart Study Planner</h1>
-        <p>Welcome to the Smart Study Planner! This tool helps you organize your study schedule effectively.</p>
-        <p>Click on the link below to open google</p>
-        <a href="https://www.google.com" target="_blank">Open Google</a>
-    </body>
+
+    <!-- Header -->
+    <header>
+
+        <h1>Bhasha-Setu AI</h1>
+        <p>AI-Powered Multilingual Learning Platform</p>
+
+        <nav>
+            <a href="#dashboard">Dashboard</a> |
+            <a href="#classrooms">Classrooms</a> |
+            <a href="#translations">Translations</a> |
+            <a href="#notes">Notes</a> |
+            <a href="#assessments">Assessments</a> |
+            <a href="#profile">Profile</a>
+        </nav>
+
+        <hr>
+
+    </header>
+
+
+    <!-- Main Dashboard -->
+    <main id="dashboard">
+
+        <h2>Welcome to Bhasha-Setu AI</h2>
+
+        <p>
+            One Teacher. One Lecture. Every Language.
+        </p>
+
+
+        <!-- Quick Statistics -->
+        <section>
+
+            <h2>Dashboard Overview</h2>
+
+            <table border="1">
+
+                <tr>
+                    <th>Total Classrooms</th>
+                    <th>Active Classes</th>
+                    <th>Students</th>
+                    <th>Languages</th>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>1</td>
+                    <td>42</td>
+                    <td>6</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <br>
+
+
+        <!-- Current Classroom -->
+        <section id="classrooms">
+
+            <h2>Current Classroom</h2>
+
+            <article>
+
+                <h3>Computer Networks</h3>
+
+                <p>
+                    <strong>Classroom ID:</strong> BS-2026-CN01
+                </p>
+
+                <p>
+                    <strong>Teacher:</strong> D. Yoshitha
+                </p>
+
+                <p>
+                    <strong>Status:</strong> Live
+                </p>
+
+                <p>
+                    <strong>Students Connected:</strong> 42
+                </p>
+
+                <p>
+                    <strong>Source Language:</strong> English
+                </p>
+
+                <p>
+                    <strong>Translation:</strong> Enabled
+                </p>
+
+                <button>Join Classroom</button>
+
+                <button>Start Lecture</button>
+
+                <button>End Lecture</button>
+
+            </article>
+
+        </section>
+
+
+        <br>
+
+
+        <!-- Live Translation -->
+        <section id="translations">
+
+            <h2>Live Translation</h2>
+
+            <article>
+
+                <h3>Current Lecture</h3>
+
+                <p>
+                    <strong>Source Language:</strong>
+                    English
+                </p>
+
+                <label for="language">
+                    Select Preferred Language:
+                </label>
+
+                <select id="language">
+
+                    <option>English</option>
+                    <option>Telugu</option>
+                    <option>Hindi</option>
+                    <option>Tamil</option>
+                    <option>Kannada</option>
+                    <option>Malayalam</option>
+
+                </select>
+
+                <br><br>
+
+                <p>
+                    <strong>Live Transcript:</strong>
+                </p>
+
+                <blockquote>
+                    Data link layer is responsible for reliable communication
+                    between two directly connected nodes.
+                </blockquote>
+
+                <p>
+                    <strong>Translated Text:</strong>
+                </p>
+
+                <blockquote>
+                    డేటా లింక్ లేయర్ నేరుగా కనెక్ట్ అయిన రెండు నోడ్స్ మధ్య
+                    నమ్మకమైన కమ్యూనికేషన్‌ను అందిస్తుంది.
+                </blockquote>
+
+                <button>Listen to Translation</button>
+
+                <button>Pause Translation</button>
+
+            </article>
+
+        </section>
+
+
+        <br>
+
+
+        <!-- Language Selection -->
+        <section>
+
+            <h2>My Languages</h2>
+
+            <p>Select the languages you want to learn in:</p>
+
+            <form>
+
+                <input type="checkbox" id="english">
+                <label for="english">English</label>
+
+                <br>
+
+                <input type="checkbox" id="telugu">
+                <label for="telugu">Telugu</label>
+
+                <br>
+
+                <input type="checkbox" id="hindi">
+                <label for="hindi">Hindi</label>
+
+                <br>
+
+                <input type="checkbox" id="tamil">
+                <label for="tamil">Tamil</label>
+
+                <br>
+
+                <input type="checkbox" id="kannada">
+                <label for="kannada">Kannada</label>
+
+                <br>
+
+                <input type="checkbox" id="malayalam">
+                <label for="malayalam">Malayalam</label>
+
+                <br><br>
+
+                <button type="submit">
+                    Save Languages
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <br>
+
+
+        <!-- Notes -->
+        <section id="notes">
+
+            <h2>AI Learning Resources</h2>
+
+            <article>
+
+                <h3>AI-Generated Notes</h3>
+
+                <p>
+                    Automatically generated key points from your lecture.
+                </p>
+
+                <ul>
+                    <li>Data Link Layer Functions</li>
+                    <li>Framing Methods</li>
+                    <li>Error Detection</li>
+                    <li>Flow Control</li>
+                    <li>Character Count Framing</li>
+                </ul>
+
+                <button>
+                    View Notes
+                </button>
+
+                <button>
+                    Download Notes
+                </button>
+
+            </article>
+
+
+            <article>
+
+                <h3>Glossary</h3>
+
+                <dl>
+
+                    <dt>Framing</dt>
+                    <dd>Division of data into manageable units called frames.</dd>
+
+                    <dt>Protocol</dt>
+                    <dd>A set of rules used for communication between devices.</dd>
+
+                    <dt>WebSocket</dt>
+                    <dd>A technology used for real-time bidirectional communication.</dd>
+
+                </dl>
+
+            </article>
+
+        </section>
+
+
+        <br>
+
+
+        <!-- Assessments -->
+        <section id="assessments">
+
+            <h2>AI Assessments</h2>
+
+            <article>
+
+                <h3>Lecture-Based MCQs</h3>
+
+                <p>
+                    Test your understanding of the current lecture.
+                </p>
+
+                <ol>
+
+                    <li>
+                        Which layer is responsible for framing?
+
+                        <br>
+
+                        <input type="radio" name="q1">
+                        <label>Application Layer</label>
+
+                        <br>
+
+                        <input type="radio" name="q1">
+                        <label>Data Link Layer</label>
+
+                        <br>
+
+                        <input type="radio" name="q1">
+                        <label>Network Layer</label>
+
+                        <br>
+
+                        <input type="radio" name="q1">
+                        <label>Transport Layer</label>
+
+                    </li>
+
+                    <br>
+
+                    <li>
+                        What is used to identify the size of a frame
+                        in character count framing?
+
+                        <br>
+
+                        <input type="radio" name="q2">
+                        <label>IP Address</label>
+
+                        <br>
+
+                        <input type="radio" name="q2">
+                        <label>Character Count</label>
+
+                        <br>
+
+                        <input type="radio" name="q2">
+                        <label>MAC Address</label>
+
+                        <br>
+
+                        <input type="radio" name="q2">
+                        <label>Port Number</label>
+
+                    </li>
+
+                </ol>
+
+                <button>
+                    Submit Assessment
+                </button>
+
+            </article>
+
+        </section>
+
+
+        <br>
+
+
+        <!-- Offline Status -->
+        <section>
+
+            <h2>Connectivity Status</h2>
+
+            <p>
+                <strong>Status:</strong> Online
+            </p>
+
+            <p>
+                Local Cache: Available
+            </p>
+
+            <p>
+                Synchronization: Up to date
+            </p>
+
+            <button>
+                View Offline Content
+            </button>
+
+        </section>
+
+
+        <br>
+
+
+        <!-- Recent Activity -->
+        <section>
+
+            <h2>Recent Activity</h2>
+
+            <table border="1">
+
+                <tr>
+                    <th>Date</th>
+                    <th>Activity</th>
+                    <th>Status</th>
+                </tr>
+
+                <tr>
+                    <td>12 Sep 2026</td>
+                    <td>Joined Computer Networks</td>
+                    <td>Completed</td>
+                </tr>
+
+                <tr>
+                    <td>11 Sep 2026</td>
+                    <td>Generated AI Notes</td>
+                    <td>Completed</td>
+                </tr>
+
+                <tr>
+                    <td>10 Sep 2026</td>
+                    <td>Completed Translation Session</td>
+                    <td>Completed</td>
+                </tr>
+
+            </table>
+
+        </section>
+
+
+        <br>
+
+
+        <!-- Profile -->
+        <section id="profile">
+
+            <h2>Profile</h2>
+
+            <p>
+                <strong>Name:</strong> Student
+            </p>
+
+            <p>
+                <strong>Role:</strong> Student
+            </p>
+
+            <p>
+                <strong>Preferred Language:</strong> Telugu
+            </p>
+
+            <button>
+                Edit Profile
+            </button>
+
+            <button>
+                Logout
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <hr>
+
+        <p>
+            Bhasha-Setu AI
+        </p>
+
+        <p>
+            One Teacher. One Lecture. Every Language.
+        </p>
+
+        <p>
+            Smart India Hackathon 2026 | SIH26042
+        </p>
+
+    </footer>
+
+</body>
 </html>
